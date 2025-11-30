@@ -1,1 +1,24 @@
-(anita) (lava la) tina. Esta, es una frase en la que Ana, palabra que por si misma constituye un palindromo (ana,  leido al reves tambien dice ana), se transforma en un frase que es un palindromo. Anis no es palindromo.
+El sol se ocultaba ya; las nieblas ascendían del profundo seno de los
+valles; deteníanse1 un momento entre los obscuros bosques y las
+negras gargantas de la cordillera, como un rebaño gigantesco; después
+avanzaban con rapidez hacia las cumbres; se desprendían majestuosas de
+las agudas copas de los abetos e iban por último a envolver la soberbia
+frente de las rocas, titánicos guardianes de la montaña que habían
+desafiado allí, durante millares de siglos, las tempestades del cielo y
+las agitaciones de la tierra.
+
+Los últimos rayos del sol poniente franjaban de oro y de púrpura estos
+enormes turbantes formados por la niebla, parecían incendiar las nubes
+agrupadas en el horizonte, rielaban débiles en las aguas tranquilas del
+remoto lago, temblaban al retirarse de las llanuras invadidas ya por la
+sombra, y desaparecían después de iluminar con su última caricia la
+obscura cresta de aquella oleada de pórfido.
+
+Los postreros rumores del día anunciaban por dondequiera la proximidad
+del silencio. A lo lejos, en los valles, en las faldas de las colinas, a
+las orillas de los arroyos, veíanse reposando quietas y silenciosas las
+vacadas; los ciervos cruzaban como sombras entre los árboles, en busca
+de sus ocultas guaridas; las aves habían entonado ya sus himnos de la
+tarde, y descansaban en sus lechos de ramas; en las rozas se encendía la
+alegre hoguera de pino, y el viento glacial del invierno comenzaba a
+agitarse entre las hojas.
