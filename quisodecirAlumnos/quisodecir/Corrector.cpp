@@ -1,9 +1,9 @@
 /*****************************************************************************************************************
 	UNIVERSIDAD NACIONAL AUTONOMA DE MEXICO
-	FACULTAD DE ESTUDIOS SUPERIORES ARAGON
+	FACULTAD DE ESTUDIOS SUPERIORES -ARAGON-
 
 	Computadoras y programacion. 
-	(c) Ponga su nombre y numero de cuenta aqui.
+	(c) Hernandez Rendon Aaron 323266453
 	
 	Quiso decir: Programa principal de la aplicacion de la distancia de Levenstein.
 	
