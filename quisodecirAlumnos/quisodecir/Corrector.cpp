@@ -196,5 +196,74 @@ void	ClonaPalabras(
 	char	szPalabrasSugeridas[][TAMTOKEN], 	//Lista de palabras clonadas
 	int &	iNumSugeridas)						//Numero de elementos en la lista
 {
+	// Definimos el alfabeto exacto solicitado (32 caracteres)
+	const char ALFABETO[] = "abcdefghijklmnñopqrstuvwxyzáéíóú";
 
+	// Calculamos la longitud automaticamente
+	int lenAlfabeto = (int)strlen(ALFABETO);
+
+	int totalSugeridas = 0;
+	int longitud = (int)strlen(szPalabraLeida);
+	char buffer[TAMTOKEN];
+
+	if (longitud > 1) {
+
+		// 1. Eliminación de un caracter
+		for (int i = 0; i < longitud; i++) {
+			strcpy_s(buffer, TAMTOKEN, szPalabraLeida);
+			// Desplazar a la izquierda para borrar
+			for (int j = i; j < longitud; j++) {
+				buffer[j] = buffer[j + 1];
+			}
+			strcpy_s(szPalabrasSugeridas[totalSugeridas++], TAMTOKEN, buffer);
+		}
+
+		// 2. Transposición (intercambio) de caracteres adyacentes
+		for (int i = 0; i < longitud - 1; i++) {
+			strcpy_s(buffer, TAMTOKEN, szPalabraLeida);
+			char temp = buffer[i];
+			buffer[i] = buffer[i + 1];
+			buffer[i + 1] = temp;
+			strcpy_s(szPalabrasSugeridas[totalSugeridas++], TAMTOKEN, buffer);
+		}
+	}
+
+	// 3. Sustitución (reemplazar cada letra por una del alfabeto)
+	for (int i = 0; i < longitud; i++) {
+		strcpy_s(buffer, TAMTOKEN, szPalabraLeida);
+		for (int j = 0; j < lenAlfabeto; j++) {
+			buffer[i] = ALFABETO[j];
+			strcpy_s(szPalabrasSugeridas[totalSugeridas++], TAMTOKEN, buffer);
+		}
+	}
+
+	// 4. Inserción (insertar cada letra del alfabeto en cada posicion)
+	for (int i = 0; i <= longitud; i++) {
+		for (int j = 0; j < lenAlfabeto; j++) {
+			strcpy_s(buffer, TAMTOKEN, szPalabraLeida);
+			int lenActual = (int)strlen(buffer);
+			// Abrir espacio desplazando a la derecha
+			for (int k = lenActual; k >= i; k--) {
+				buffer[k + 1] = buffer[k];
+			}
+			buffer[i] = ALFABETO[j];
+			strcpy_s(szPalabrasSugeridas[totalSugeridas++], TAMTOKEN, buffer);
+		}
+	}
+
+	// 5. Incluir la palabra original
+	strcpy_s(szPalabrasSugeridas[totalSugeridas++], TAMTOKEN, szPalabraLeida);
+
+	// 6. Ordenar alfabéticamente todas las sugerencias
+	iNumSugeridas = totalSugeridas;
+
+	for (int i = 0; i < iNumSugeridas - 1; i++) {
+		for (int j = i + 1; j < iNumSugeridas; j++) {
+			if (strcmp(szPalabrasSugeridas[i], szPalabrasSugeridas[j]) > 0) {
+				strcpy_s(buffer, TAMTOKEN, szPalabrasSugeridas[i]);
+				strcpy_s(szPalabrasSugeridas[i], TAMTOKEN, szPalabrasSugeridas[j]);
+				strcpy_s(szPalabrasSugeridas[j], TAMTOKEN, buffer);
+			}
+		}
+	}
 }
