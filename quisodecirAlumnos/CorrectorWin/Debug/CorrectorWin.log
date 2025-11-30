@@ -1,0 +1,15 @@
+﻿  stdafx.cpp
+  Corrector.cpp
+  CorrectorWin.cpp
+C:\Users\aaron\OneDrive\Escritorio\INGENIERIA\CYP06\quisodecirAlumnos\quisodecir\Corrector.cpp(30,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compilando archivo de origen "/quisodecir/Corrector.cpp")
+  
+C:\Users\aaron\OneDrive\Escritorio\INGENIERIA\CYP06\quisodecirAlumnos\quisodecir\Corrector.cpp(58,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compilando archivo de origen "/quisodecir/Corrector.cpp")
+  
+C:\Users\aaron\OneDrive\Escritorio\INGENIERIA\CYP06\quisodecirAlumnos\quisodecir\Corrector.cpp(76,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (compilando archivo de origen "/quisodecir/Corrector.cpp")
+  
+  CorrectorWinDlg.cpp
+  Generando código...
+  CorrectorWin.vcxproj -> C:\Users\aaron\OneDrive\Escritorio\INGENIERIA\CYP06\quisodecirAlumnos\Debug\CorrectorWin.exe

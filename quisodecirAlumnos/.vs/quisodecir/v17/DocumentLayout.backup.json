@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aaron\\OneDrive\\Escritorio\\INGENIERIA\\CYP06\\quisodecirAlumnos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07C01837-8A08-4EB8-9FD6-9434D9C4E5E9}|quisodecir\\quisodecir.vcxproj|C:\\Users\\aaron\\OneDrive\\Escritorio\\INGENIERIA\\CYP06\\quisodecirAlumnos\\quisodecir\\Corrector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{07C01837-8A08-4EB8-9FD6-9434D9C4E5E9}|quisodecir\\quisodecir.vcxproj|solutionrelative:quisodecir\\Corrector.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07C01837-8A08-4EB8-9FD6-9434D9C4E5E9}|quisodecir\\quisodecir.vcxproj|C:\\Users\\aaron\\OneDrive\\Escritorio\\INGENIERIA\\CYP06\\quisodecirAlumnos\\quisodecir\\quisodecir.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{07C01837-8A08-4EB8-9FD6-9434D9C4E5E9}|quisodecir\\quisodecir.vcxproj|solutionrelative:quisodecir\\quisodecir.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "quisodecir.cpp",
+              "DocumentMoniker": "C:\\Users\\aaron\\OneDrive\\Escritorio\\INGENIERIA\\CYP06\\quisodecirAlumnos\\quisodecir\\quisodecir.cpp",
+              "RelativeDocumentMoniker": "quisodecir\\quisodecir.cpp",
+              "ToolTip": "C:\\Users\\aaron\\OneDrive\\Escritorio\\INGENIERIA\\CYP06\\quisodecirAlumnos\\quisodecir\\quisodecir.cpp",
+              "RelativeToolTip": "quisodecir\\quisodecir.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAA4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-21T02:01:45.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Corrector.cpp",
+              "DocumentMoniker": "C:\\Users\\aaron\\OneDrive\\Escritorio\\INGENIERIA\\CYP06\\quisodecirAlumnos\\quisodecir\\Corrector.cpp",
+              "RelativeDocumentMoniker": "quisodecir\\Corrector.cpp",
+              "ToolTip": "C:\\Users\\aaron\\OneDrive\\Escritorio\\INGENIERIA\\CYP06\\quisodecirAlumnos\\quisodecir\\Corrector.cpp",
+              "RelativeToolTip": "quisodecir\\Corrector.cpp",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAiwGkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-08T23:04:22.364Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
