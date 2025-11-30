@@ -1,6 +1,6 @@
 /*****************************************************************************************************************
 	UNIVERSIDAD NACIONAL AUTONOMA DE MEXICO
-	FACULTAD DE ESTUDIOS SUPERIORES -ARAGON-
+	FACULTAD DE ESTUDIOS SUPERIORES ARAGON
 
 	Computadoras y programacion. 
 	(c) Ponga su nombre y numero de cuenta aqui.
@@ -52,7 +52,7 @@ void	Diccionario			(char *szNombre, char szPalabras[][TAMTOKEN], int iEstadistic
 				}
 			}
 
-			// Si es separador o se llenó el buffer
+			// Si es separador o se llenÃ³ el buffer
 			if ((esSeparador == 1 || idx >= TAMTOKEN - 1) && idx > 0) {
 				tmp[idx] = '\0';
 
@@ -197,7 +197,7 @@ void	ClonaPalabras(
 	int &	iNumSugeridas)						//Numero de elementos en la lista
 {
 	// Definimos el alfabeto exacto solicitado (32 caracteres)
-	const char ALFABETO[] = "abcdefghijklmnñopqrstuvwxyzáéíóú";
+	const char ALFABETO[] = "abcdefghijklmnÃ±opqrstuvwxyzÃ¡Ã©Ã­Ã³Ãº";
 
 	// Calculamos la longitud automaticamente
 	int lenAlfabeto = (int)strlen(ALFABETO);
@@ -208,7 +208,7 @@ void	ClonaPalabras(
 
 	if (longitud > 1) {
 
-		// 1. Eliminación de un caracter
+		// 1. EliminaciÃ³n de un caracter
 		for (int i = 0; i < longitud; i++) {
 			strcpy_s(buffer, TAMTOKEN, szPalabraLeida);
 			// Desplazar a la izquierda para borrar
@@ -218,7 +218,7 @@ void	ClonaPalabras(
 			strcpy_s(szPalabrasSugeridas[totalSugeridas++], TAMTOKEN, buffer);
 		}
 
-		// 2. Transposición (intercambio) de caracteres adyacentes
+		// 2. TransposiciÃ³n (intercambio) de caracteres adyacentes
 		for (int i = 0; i < longitud - 1; i++) {
 			strcpy_s(buffer, TAMTOKEN, szPalabraLeida);
 			char temp = buffer[i];
@@ -228,7 +228,7 @@ void	ClonaPalabras(
 		}
 	}
 
-	// 3. Sustitución (reemplazar cada letra por una del alfabeto)
+	// 3. SustituciÃ³n (reemplazar cada letra por una del alfabeto)
 	for (int i = 0; i < longitud; i++) {
 		strcpy_s(buffer, TAMTOKEN, szPalabraLeida);
 		for (int j = 0; j < lenAlfabeto; j++) {
@@ -237,7 +237,7 @@ void	ClonaPalabras(
 		}
 	}
 
-	// 4. Inserción (insertar cada letra del alfabeto en cada posicion)
+	// 4. InserciÃ³n (insertar cada letra del alfabeto en cada posicion)
 	for (int i = 0; i <= longitud; i++) {
 		for (int j = 0; j < lenAlfabeto; j++) {
 			strcpy_s(buffer, TAMTOKEN, szPalabraLeida);
@@ -254,7 +254,7 @@ void	ClonaPalabras(
 	// 5. Incluir la palabra original
 	strcpy_s(szPalabrasSugeridas[totalSugeridas++], TAMTOKEN, szPalabraLeida);
 
-	// 6. Ordenar alfabéticamente todas las sugerencias
+	// 6. Ordenar alfabÃ©ticamente todas las sugerencias
 	iNumSugeridas = totalSugeridas;
 
 	for (int i = 0; i < iNumSugeridas - 1; i++) {
