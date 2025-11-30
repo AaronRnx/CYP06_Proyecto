@@ -127,62 +127,6 @@ void	ListaCandidatas		(
 	int &	iNumLista)							//Numero de elementos en la szListaFinal
 {
 
-	iNumLista = 0;
-	int count = 0;
-
-	// 1. Cruzar las listas (Filtro)
-	for (int i = 0; i < iNumElementos; i++) {
-		for (int j = 0; j < iNumSugeridas; j++) {
-			if (strcmp(szPalabras[i], szPalabrasSugeridas[j]) == 0) {
-				if (count < NUMPALABRAS) {
-					iPeso[count] = iEstadisticas[i];
-					strcpy_s(szListaFinal[count], TAMTOKEN, szPalabrasSugeridas[j]);
-					count++;
-				}
-			}
-		}
-	}
-
-	// 2. Eliminar repetidas
-	int unicos = 0;
-	for (int i = 0; i < count; i++) {
-		int yaExiste = 0; 
-
-		for (int j = 0; j < unicos; j++) {
-			if (strcmp(szListaFinal[j], szListaFinal[i]) == 0) {
-				yaExiste = 1; // Verdadero
-				break;
-			}
-		}
-
-		if (yaExiste == 0) {
-			strcpy_s(szListaFinal[unicos], TAMTOKEN, szListaFinal[i]);
-			iPeso[unicos] = iPeso[i];
-			unicos++;
-		}
-	}
-
-	iNumLista = unicos;
-
-	// 3. Ordenar por peso (Mayor a Menor)
-	for (int i = 0; i < iNumLista - 1; i++) {
-		for (int j = 0; j < iNumLista - 1 - i; j++) {
-			if (iPeso[j] < iPeso[j + 1]) {
-				int auxPeso;
-				char waux[TAMTOKEN];
-
-				// Swap peso
-				auxPeso = iPeso[j];
-				iPeso[j] = iPeso[j + 1];
-				iPeso[j + 1] = auxPeso;
-
-				// Swap palabra
-				strcpy_s(waux, TAMTOKEN, szListaFinal[j]);
-				strcpy_s(szListaFinal[j], TAMTOKEN, szListaFinal[j + 1]);
-				strcpy_s(szListaFinal[j + 1], TAMTOKEN, waux);
-			}
-		}
-	}
 }
 
 /*****************************************************************************************************************
