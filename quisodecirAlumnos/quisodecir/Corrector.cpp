@@ -196,7 +196,7 @@ void	ClonaPalabras(
 	char	szPalabrasSugeridas[][TAMTOKEN], 	//Lista de palabras clonadas
 	int &	iNumSugeridas)						//Numero de elementos en la lista
 {
-	// Definimos el alfabeto exacto solicitado (32 caracteres)
+	// Se define el alfabeto a utilizar segun la asginacion.
 	const char ALFABETO[] = "abcdefghijklmnñopqrstuvwxyzáéíóú";
 
 	// Calculamos la longitud automaticamente
